@@ -1,0 +1,8 @@
+version: '3.2'
+
+services:
+  jsonmd:
+    image: json2cmd:latest
+    volumes:
+      - ./apipost.json:/code/postman.json
+      - ./output.md:/code/output.md
